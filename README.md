@@ -1,27 +1,48 @@
-# organicshop
+# Organic Shop
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+Organic Shop is a real-world e-commerce application built with Angular, Firebase, and Bootstrap 4. It provides a seamless online shopping experience for users looking for organic products. The application is designed with responsive web design principles to ensure a smooth user experience across various devices and screen sizes.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- **User Authentication**: Users can log in using Google authentication to access and manage their shopping carts.
+- **Dynamic Product Listing**: Products are categorized, and users can view products under selected categories.
+- **Shopping Cart**: Users can add products to their shopping cart, change quantities, and see the real-time update of the total cost.
+- **Checkout Process**: A checkout feature that includes filling out shipping information. Authentication is required to access the checkout process.
+- **Order Management**: After placing an order, users are redirected to an order success page displaying the order ID.
+- **Admin Features**: Administrative users can manage orders and products. Features include sorting, resizing columns, pagination, and searching for specific products.
+- **Responsive Design**: Built using Bootstrap 4 for a responsive layout that adjusts to different screen sizes and devices.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Frontend framework for building the client-side of the application.
+- **Firebase**: Backend-as-a-Service (BaaS) used for hosting, user authentication, and data storage.
+- **Bootstrap 4**: Styling framework for developing responsive and mobile-first websites.
+- **Firebase Functions**: (Note: This feature is mentioned but not used in the free plan of Firebase)
 
-## Build
+## Setup and Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. **Clone the Repository**:
+   ```bash
+   git clone [URL to the repository]
+   ```
+2. **Install Dependencies**:
+   ```bash
+   cd organic-shop
+   npm install
+   ```
+3. **Environment Configuration**:
+   Ensure you have the Firebase configurations set in your environment files.
+   ```
+   src/environments/environment.ts
+   ```
+4. **Run the Application**:
+   ```bash
+   ng serve
+   ```
+   Navigate to `http://localhost:4200/` to view the application.
 
-## Running unit tests
+## Possible Extensions
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- **Billing Integration**: Integrate payment providers like PayPal or Stripe to handle transactions.
+- **Advanced Product Features**: Add filters and advanced search options to enhance product browsing.
+- **Mobile App**: Extend the platform to a native mobile app using Angular Ionic for better mobile performance.
